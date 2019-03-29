@@ -1,0 +1,55 @@
+
+//----------------------------------------------
+// リンクのテキストデコレーションを逆転する
+//----------------------------------------------
+.u_reverse_link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//----------------------------------------------
+// リンクのアンダーラインを常に表示
+//----------------------------------------------
+.u_underline_link {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.u_color_link {
+  color: #4D8BD9;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  height: 72px;
+  border-radius: 4px;
+  color: #BF0000;
+  font-weight: bold;
+  &-borRed {
+    border: 1px solid #BF0000;
+  }
+}
+
+@font-face {
+	font-family: 'noto-sans';
+	src:url('/assets/font/NotoSansCJKjp-Regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'roboto';
+	src:url('/assets/font/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.bg-gray {
+  background: #F4F4F4;
+}

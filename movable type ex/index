@@ -1,0 +1,80 @@
+<$mt:Include module="ヘッダー" $>
+
+    <div class="main_visual">
+      <div class="main_visual_text">
+        <h2>めっちゃ良い家。<br>めっちゃおしゃれ。</h2>
+        <p>竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王戦竜王竜t</p>
+      </div>
+    </div>
+    <div class="reason">
+      <div class="container">
+        <h2>Renosyの賃貸はここが違う。</h2>
+        <div class="reason_list">
+          <div class="reason_list_item">
+            <h3>すべての物件が<br>敷金・礼金・仲介手数料０！</h3>
+          <mt:Asset id="2576">
+           <img src="<$mt:AssetURL$>" alt="">
+          </mt:Asset>
+          </div>
+          <div class="reason_list_item">
+            <h3>すべての物件が<br>ハイグレードな<br>分譲マンション！</h3>
+            <mt:Asset id="2577">
+           <img src="<$mt:AssetURL$>" alt="">
+          </mt:Asset>
+          </div>
+          <div class="reason_list_item">
+            <h3>すべての物件が<br>自社管理！</h3>
+            <mt:Asset id="2578">
+           <img src="<$mt:AssetURL$>" alt="">
+          </mt:Asset>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="property">
+      <div class="container">
+        <h2>取り扱い物件</h2>
+        <div class="property_list">
+          <mt:Entries category = "apartment">
+          <div class="property_list_item">
+            <div class="property_list_item_img">
+              <mt:EntryAssets type="image" lastn="1">
+            <img src="<mt:AssetThumbnailURL>" alt="<mt:AssetLabel>" />
+              </mt:EntryAssets>
+              <p class="title"><$mt:EntryTitle$></p>
+            </div>
+            <a href="<$mt:EntryPermalink$>"><div class="property_list_item_info">
+            <div class="price"><$mt:EntryDataPrice$></div>
+            <div class="description">
+                <p><$mt:EntryDataDescription$></p>
+                <p><$mt:EntryDataDate$></p>
+                <p><$mt:EntryDataSquare$></p>
+              </div>
+             <$mt:EntryBody$>
+            </div></a>
+          </div>
+         </mt:Entries>
+
+        </div>
+      </div>
+    </div>
+    <div class="contact_field">
+      <div class="contact_field_inner">
+        <div class="contact_field_text pc_only">詳しくはお電話もしくはメールでお問い合わせください。</div>
+        <div class="text sp_only">お問い合わせ</div>
+        <div class="container">
+          <div class="contact_button">
+            <div class="email">
+              <p class="ti-email icon"></p>
+              <p><a href="#">相談する</a></p>
+            </div>
+            <div class="phone">
+              <p class="icon-tel icon"></p>
+              <p><a href="#">電話する</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<$mt:Include module="フッター" $>

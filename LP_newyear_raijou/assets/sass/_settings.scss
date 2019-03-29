@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+//----------------------------------------------//
+// *Media Queries                               //
+//----------------------------------------------//
+$bp_tab: 1200px; //tab
+$bp_sp: 767px; //sp
+
+@mixin mq($device,$val:null,$val2:null) {
+  @if $device == pc {
+  //pc
+    @media only screen and (min-width: $bp_tab + 1){@content;}
+    @media print {@content;}
+  }@else if $device == tab {
+  //tab
+    @media only screen and (min-width: $bp_sp + 1) and (max-width: $bp_tab){@content;}
+  }@else if $device == tab_l {
+  //tab_l
+    @media only screen and (min-width: ($bp_tab - $bp_sp) / 2 + $bp_sp + 1) and (max-width: $bp_tab){@content;}
+  }@else if $device == tab_s {
+  //tab_s
+    @media only screen and (min-width: $bp_sp + 1) and (max-width: ($bp_tab - $bp_sp) / 2 + $bp_sp){@content;}
+  }@else if $device == sp {
+  //sp
+    @media only screen and (max-width: $bp_sp){@content;}
+  }@else if $device == sp_l {
+  //sp_l
+    @media only screen and (min-width: ($bp_sp - 320) / 2 + 320+ 1) and (max-width: $bp_sp){@content;}
+  }@else if $device == sp_s {
+  //sp_s
+    @media only screen and (max-width: ($bp_sp - 320) / 2 + 320){@content;}
+  }@else if $device == pc_tab {
+  //pc & tab
+    @media only screen and (min-width: $bp_sp + 1){@content;}
+    @media print {@content;}
+  }@else if $device == tab_sp {
+  //tab & sp
+    @media only screen and (max-width: $bp_tab){@content;}
+  }@else if $device == min_w {
+  //max-width
+    @media only screen and (min-width: $val){@content;}
+    @media print {@content;}
+  }@else if $device == max_w {
+  //min-width
+    @media only screen and (max-width: $val){@content;}
+    @if $val > $bp_tab {
+      @media print {@content;}
+    }
+  }@else if $device == min_max_w {
+  //min-width ~ max-width
+    @media only screen and (min-width: $val) and (max-width: $val2){@content;}
+    @if $val2 > $bp_tab {
+      @media print {@content;}
+    }
+  }@else if $device == min_h {
+  //max-height
+    @media only screen and (min-height: $val){@content;}
+  }@else if $device == max_h {
+  //min-height
+    @media only screen and (max-height: $val){@content;}
+  }@else if $device == min_max_h {
+  //min-height ~ max-height
+    @media only screen and (min-height: $val) and (max-height: $val2){@content;}
+  }
+}
+
+
+//----------------------------------------------//
+// *Variable                                    //
+//----------------------------------------------//
+
+// メインカラム
+$columnWidth: 900;
+
+// フォントのベーカラー
+$baseColor: #222;
+
+
+//----------------------------------------------//
+// *Placeholder                                 //
+//----------------------------------------------//
+
+// コンテンツ幅 - baceWidth
+%bw {
+  max-width: $columnWidth + px;
+  margin: auto;
+  @include mq(tab_sp) {
+    width: 90%;
+  }
+}
+%gothic_en {
+  font-family: "Quicksand", sans-serif;
+}
+
+// クリアフィックス - clearFix
+%cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+
+//----------------------------------------------//
+// *Function                                    //
+//----------------------------------------------//
+
+// %計算
+@function convertingPercent($width,$parentWidth:$columnWidth) {
+  @return $width / $parentWidth * 100%;
+}
+
+//----------------------------------------------//
+// *mixin                                       //
+//----------------------------------------------//
+
+// フォントサイズ
+// @include fz(任意のサイズ,親要素のサイズ); ※px不要
+@mixin fz($size) {
+  font-size: ($size * .1) + rem;
+}
+
+// 値を振り分け
+// @include assignValue(プロパティ,pc幅,tab~sp幅); or @include cV(プロパティ,pc幅,tab幅,sp幅);
+@mixin assignValue($pro, $v1:0, $v2:0, $v3:null) {
+  #{$pro}: $v1;
+  @if $v3 == null {
+    @include mq(sp) {
+      #{$pro}: $v2;
+    }
+  }@else {
+    @include mq(tab) {
+      #{$pro}: $v2;
+    }
+    @include mq(sp) {
+      #{$pro}: $v3;
+    }
+  }
+}
+
+// ホバー
+// @include hover {
+//    style
+// }
+@mixin hover($class : 'active') {
+  &.#{$class},
+  .mouse &:hover,
+  .mobile &.touchstart,
+  .tablet &.touchstart {
+    @content;
+  }
+  .mobile & {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    &.touchend {
+      // transition-delay: 200ms;
+    }
+  }
+}
+
+// 幅を決めて中央寄せ
+// @include centeringByWidth(任意の幅px);
+@mixin centeringByWidth($width) {
+  max-width: $width;
+  width: 95%;
+  margin: auto;
+}
+
+// 画像を拡大
+// @include zoomImg(拡大率,x軸基点);
+@mixin zoomImg($mag:140%,$cri:center) {
+  overflow: hidden;
+  img {
+    position: relative;
+    width: $mag;
+    max-width: none;
+    @if $cri == center {
+      margin-left: - ($mag - 100) / 2;
+    }
+    @if $cri == right {
+      margin-left: - ($mag - 100);
+    }
+  }
+}
+
+// リンクの下線を逆にする
+// @include reverseDecoration;
+@mixin reverseDecoration {
+  text-decoration: none !important;
+  @include hover {
+    text-decoration: underline !important;
+  }
+}
+
+// アイコンフォントを挿入する
+// @include icon(ユニコード);
+@mixin icon($content : "\e764",$pseudo : before) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:#{$pseudo} {
+    content: $content;
+    font-family: 'themify';
+    font-style: normal;
+    display: inline-block;
+    width: 1em;
+    text-align: center;
+    @content;
+  }
+}

@@ -1,0 +1,54 @@
+<$mt:WebsiteID setvar="website_id"$>
+<!DOCTYPE html<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta data-js-elm="viewport" name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title></title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="">
+  <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="<$mt:Link template="feed_recent"$>" />
+  <link rel="stylesheet" href="<$mt:Link template="styles"$>" type="text/css">
+ <link rel="stylesheet" href="<$mt:Link template="themify-icons"$>" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="<$mt:Link template="department-detail"$>" type="text/css">
+  <link rel="stylesheet" href="<$mt:Link template="jquery.bxslider"$>" type="text/css">
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <![endif]-->
+  <link rel="icon" href="images/favicon.ico">
+  <$mt:Var name="html_head"$>
+  <$mt:CCLicenseRDF$>
+    <$mt:CanonicalLink$>
+    <title><$mt:Var name="title"$></title>
+    <$mt:StatsSnippet$>
+
+</head>
+<body id="l_top">
+  <header>
+    <div class="top_header">
+      <div class="logo">
+      <mt:Asset id="2579">
+        <img src="<$mt:AssetURL$>" alt="">
+      </mt:Asset>
+
+      </div>
+      <div class="contact">
+      <mt:Asset id="2582">
+        <img src="<$mt:AssetURL$>" alt="">
+      </mt:Asset>
+    </div>
+    </div>
+    <div class="b_header">Renosyの賃貸</div>
+  </header>
+  <main>

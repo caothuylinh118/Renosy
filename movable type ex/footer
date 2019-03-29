@@ -1,0 +1,87 @@
+<div class="contact_fixed sp_only">
+      <div class="container">
+        <p class="text">詳しくはお電話もしくはメールでお問い合わせください。</p>
+        <div class="contact_button">
+          <div class="email">
+            <p class="ti-email icon"></p>
+            <p><a href="">相談する</a></p>
+          </div>
+          <div class="phone">
+            <p class="icon-tel icon"></p>
+            <p><a href="">電話する</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+<footer class="global_footer">
+    <div class="global_footer_inner clearfix">
+      <div class="global_footer_left">
+      <a href="https://www.renosy.com/" class="global_footer_left_logo">
+      <mt:Asset id="2580">
+           <img src="<$mt:AssetURL$>" alt="">
+          </mt:Asset>
+        <ul class="global_footer_sub sp_only">
+            <li><a class="u_reverse_link" href="https://www.ga-tech.co.jp/?__hstc=60834099.d0a89139d3d66d84a1daf8c32d589712.1527237335423.1539588470119.1539596924148.154&amp;__hssc=60834099.1.1539596924148&amp;__hsfp=1692980263">運営会社</a></li>
+            <li><a class="u_reverse_link" href="https://www.renosy.com/term">利用規約</a></li>
+            <li><a class="u_reverse_link" href="https://www.renosy.com/privacy_policy">プライバシーポリシー</a></li>
+            <li><a class="u_reverse_link" href="https://www.ga-tech.co.jp/antisocialforces/?__hstc=60834099.d0a89139d3d66d84a1daf8c32d589712.1527237335423.1539588470119.1539596924148.154&amp;__hssc=60834099.1.1539596924148&amp;__hsfp=1692980263">反社会的勢力に対する基本方針</a></li>
+            <li><a class="u_reverse_link" href="https://www.ga-tech.co.jp/compliance/?__hstc=60834099.d0a89139d3d66d84a1daf8c32d589712.1527237335423.1539588470119.1539596924148.154&amp;__hssc=60834099.1.1539596924148&amp;__hsfp=1692980263">コンプライアンス</a></li>
+          </ul>
+        <div class="global_footer_left_company">
+          <p>株式会社GA technologies</p>
+          <p>東京都渋谷区広尾1-1-39 恵比寿プライムスクエア 5F 8F</p>
+        </div>
+        <div class="global_footer_left_license">
+          <p>免許登録　宅地建物取引業免許　国土交通大臣（1）第9135号</p>
+          <p>建設業許可　東京都知事（般－29）第145636号</p>
+          <p>一級建築士事務所　東京都知事登録　第61581号</p>
+          <p>小規模不動産特定共同事業 第1号事業者</p>
+          <p>登録番号 東京都知事（1）第1号</p>
+          <p>代表取締役 樋口 龍 / 業務管理者 小林 照</p>
+          <p>電話番号 03-5468-7056</p>
+          <p>Renosyのクラウドファンディングでは不動産特定共同事業法に基づく電子取引業務を行います。</p>
+          <!--JPX-->
+          <div class="footer_bnr_jpx">
+            <p class="bnr_jpx_img">
+            <mt:Asset id="2581">
+           <img src="<$mt:AssetURL$>" alt="">
+          </mt:Asset></p>
+            <p class="bnr_jpx_txt">Renosyは東証マザーズ上場企業である<br>株式会社GA technologiesが運営しています。</p>
+          </div>
+        </div>
+      </div>
+      <div class="global_footer_right">
+        <ul class="global_footer_right_sub pc_only">
+          <li><a class="u_reverse_link" href="https://www.ga-tech.co.jp/?__hstc=60834099.d0a89139d3d66d84a1daf8c32d589712.1527237335423.1539228268434.1539588470119.153&amp;__hssc=60834099.1.1539588470119&amp;__hsfp=1495751324">運営会社</a></li>
+          <li><a href="https://www.renosy.com/term">利用規約</a></li>
+          <li><a href="https://www.renosy.com/privacy_policy">プライバシーポリシー</a></li>
+          <li><a href="https://www.ga-tech.co.jp/antisocialforces/?__hstc=60834099.d0a89139d3d66d84a1daf8c32d589712.1527237335423.1539228268434.1539588470119.153&amp;__hssc=60834099.1.1539588470119&amp;__hsfp=1495751324">反社会的勢力に対する基本方針</a></li>
+          <li><a href="https://www.ga-tech.co.jp/compliance/?__hstc=60834099.d0a89139d3d66d84a1daf8c32d589712.1527237335423.1539228268434.1539588470119.153&amp;__hssc=60834099.1.1539588470119&amp;__hsfp=1495751324">コンプライアンス</a></li>
+        </ul>
+        <div class="global_footer_right_item clearfix">
+          <div class="global_footer_sns">
+            <div class="global_footer_sns_item is_facebook"><a href="https://www.facebook.com/Renosy-1022772701104657" target="_blank"><i class="ti-facebook"></i></a></div>
+            <div class="global_footer_sns_item is_twitter"><a href="https://twitter.com/renosy77" target="_blank"><i class="ti-twitter-alt"></i></a></div>
+          </div><!-- /.global_footer_sns -->
+          <p class="global_footer_copyright">Copyright © GA technologies All rights reserved.</p> <!-- /.global_footer_copyright -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="<$mt:Link template="jquery.min"$>"></script>
+  <script src="<$mt:Link template="jquery.bxslider.js"$>"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+      $('.bxslider').bxSlider({
+        pagerCustom: '.bx-pager',
+        auto:true
+      });
+
+      $("#Print_page").click(function() {
+        window.print();
+      });
+    });
+</script>
+</body>
+</html>

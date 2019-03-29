@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('template/_header') %>
+  <main class="sub_page corprate_confirm">
+    <div class="sub_page_container">
+      <h2 class="sub_page_title">お客様情報</h2>
+      <form action="" class="form_confirm">
+        <div class="form_confirm_item contactName">
+          <div class="item_header">お名前<span>*</span></div>
+          <div class="item_body">山田 太郎</div>
+        </div>
+        <div class="form_confirm_item contactPhoneticName">
+          <div class="item_header">ふりがな</div>
+          <div class="item_body">やまだ たろう</div>
+        </div>
+        <div class="form_confirm_item contactEmail">
+          <div class="item_header">メールアドレス<span>*</span></div>
+          <div class="item_body">renosy@ga-tech.co.jp</div>
+        </div>
+        <div class="form_confirm_item contactPhoneNumber">
+          <div class="item_header">電話番号<span>*</span></div>
+          <div class="item_body">09012345678</div>
+        </div>
+        <div class="form_confirm_item free">
+          <div class="item_header">お問い合わせ内容<span>*</span></div>
+          <div class="item_body">
+            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+          </div>
+        </div>
+        <div data-js-elm="submit" name = "Submit" class="btn_submit">
+            送信する
+        </div>
+        <div class="privacy"><a href="">内容を修正する</a></div>
+
+      </form>
+    </div>
+  </main>
+  <%- include('template/_footer') %>
+</body>
+</html>

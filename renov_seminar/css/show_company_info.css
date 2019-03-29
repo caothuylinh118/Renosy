@@ -1,0 +1,32 @@
+/*===============================================
+   companyTable
+===============================================*/
+.show_company_info a {
+  display: inline-block;
+  color: #000;
+  line-height: 1.4; }
+
+.show_company_info dl dt {
+  padding: 0 0 10px;
+  background-color: transparent;
+  font-weight: bold; }
+
+.show_company_info dl dd {
+  padding: 0 0 22px;
+  line-height: 1.9; }
+
+.show_company_info dl dd span.office-post {
+  float: left;
+  width: 180px;
+  margin-right: 30px; }
+
+.show_company_info dl dd .address {
+  line-height: 1;
+  margin-bottom: 40px; }
+
+.show_company_info dl dd .address a {
+  margin-top: 10px;
+  margin-bottom: 5px; }
+
+.show_company_info dl dd .address:last-child {
+  margin-bottom: 0; }

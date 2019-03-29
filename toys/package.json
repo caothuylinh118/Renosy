@@ -1,0 +1,26 @@
+{
+  "name": "fullcalendar_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "coffee-script": "^1.12.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cached": "^1.1.0",
+    "gulp-ejs": "^2.2.0",
+    "gulp-ignore": "^2.0.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "2.1.1",
+    "gulp-watch": "^4.3.11",
+    "run-sequence": "^2.2.0"
+  }
+}
